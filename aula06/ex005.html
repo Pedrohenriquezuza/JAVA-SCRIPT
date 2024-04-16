@@ -24,11 +24,24 @@
 
     <p>aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
 
-    <div>Clique em mim</div>
+    <div class="div01">Clique em mim</div>
 
     <script>
-        var p1 = window.document.getElementsByTagName('p')[0]
-        window.document.write('Esta Escrito Assim1' + p1.innerText)
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+
+        /*
+        var div = window.document.getElementById('div01')
+        div.style.background = 'Green'
+        div.innerText = 'Estou Aguardando'
+        */
+
+        var div = window.document.querySelector('div.div01')
+        div.style.textAlign = 'Center'
+        div.style.padding = '10px'
+        div.style.background = 'red'
+        div.style.border = '3px solid black'
+        div.style.borderRadius = '20px'
     </script>
 </body>
-</html>
+</html>  
