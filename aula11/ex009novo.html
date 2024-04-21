@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: rgb(24, 24, 24);
+            color: white;
+        }
+    </style>
+    <title>Ex 09</title>
+</head>
+<body>
+    Nacionalidade: <input type="text" name="txtnac" id="txtnac" placeholder="Digite Aqui">
+    <input type="button" value="Verificar >" onclick="calcular()">
+    <div id="res"></div>
+
+    <script>
+        function calcular(){
+        var nac = window.document.querySelector('input#txtnac')
+        var res = window.document.querySelector('div#res')
+
+        var pais = nac.value
+
+        if (pais != 'brasil'){
+            res.innerHTML = `Vivendo em ${pais}, Você é Brasileiro!`
+        } else {
+            res.innerHTML = `Vivendo em ${pais}, Você é Estrangeiro`
+        }
+        }
+    </script>
+</body>
+</html>
